@@ -5,6 +5,9 @@ By integrating these components, CBMAFF-Net effectively captures both local and 
 # Usage
 1.The data used in this study came from the collection of the original database, to which auxiliary materials were first added to generate the simulated dataset, and the code was run as shown below:
 ~~~
-python process_data.py --input_file_path data/fuliao/fuliao.xlsx --sheet_name_C C --sheet_name_H H --excluded_numbers 5 10 --iterations 25 --fraction 0.2 --output_file_path data/fuliao/processed_data.xlsx
+python data_processing/gen_mixture.py --input_file_path data/fuliao/fuliao.xlsx --sheet_name_C C --sheet_name_H H --excluded_numbers 5 10 --iterations 25 --fraction 0.2 --output_file_path data/fuliao/processed_data.xlsx
 ~~~
-
+2.To convert a simulated dataset into vectorized data that can be input into a model, the following code can be used:
+~~~
+python data_processing/feature_extraction.py
+~~~
