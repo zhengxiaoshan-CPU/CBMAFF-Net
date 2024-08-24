@@ -3,4 +3,6 @@ CBMAFF-Net is an advanced deep learning model designed for the non-targeted scre
 
 By integrating these components, CBMAFF-Net effectively captures both local and global information from NMR data, leading to superior performance in identifying NPS, even when dealing with novel or undocumented substances. The model has demonstrated consistent outperformance of current state-of-the-art methods across multiple independent datasets, making it a valuable tool for forensic science and regulatory applications.
 # Usage
-1.
+1.The data used in this study came from the collection of the original database, to which auxiliary materials were first added to generate the simulated dataset, and the code was run as shown below:
+
+
