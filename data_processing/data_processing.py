@@ -61,7 +61,7 @@ def encode_and_extract(input_file_path, sheet_name, group_column, extract_column
     merged_df = pd.merge(df[[group_column]].drop_duplicates(), extracted_list, on=group_column, how='inner')
     merged_df.to_excel(output_file_path, index=False)
 
-def remove_random_rows(file_path, sheet_name_C, sheet_name_H, fraction=0.1, output_file_path):
+def remove_random_rows(file_path, sheet_name_C, sheet_name_H, fraction=0.1):
     df_C = pd.read_excel(file_path, sheet_name=sheet_name_C)
     df_H = pd.read_excel(file_path, sheet_name=sheet_name_H)
     result_df_C = pd.DataFrame()
